@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Content Include="..\..\lib\native\target\wasm32-wasi\release\native.dll">
+        <Content Include="..\..\lib\native\target\release\native.dll">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
     </ItemGroup>
