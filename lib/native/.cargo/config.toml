@@ -1,0 +1,19 @@
+[target.wasm32-unknown-emscripten]
+rustflags = [
+    "-C", "link-args=-pthread",
+    "-C", "target-feature=+atomics",
+    "-C", "link-args=-sSIDE_MODULE=2",
+    "-Zlink-native-libraries=no",
+    "-Cllvm-args=-enable-emscripten-cxx-exceptions=0",
+
+
+#    "-C", "link-args=-sSIDE_MODULE=2",
+#    "-Zlink-native-libraries=no",
+#    "-Zemscripten-wasm-eh"
+
+#    "-C", "link-args=-sSIDE_MODULE=2",
+#    "-Zlink-native-libraries=yes",
+#    "-Zemscripten-wasm-eh",
+
+#    "-C", "link-args=-sWASM=1 -sSTANDALONE_WASM --no-entry",
+]

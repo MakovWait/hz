@@ -7,7 +7,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <NativeFileReference Include="..\..\lib\native\target\wasm32-wasi\release\libnative.a" />
+        <!--        <NativeFileReference Include="..\..\lib\native\target\wasm32-unknown-emscripten\release\libnative.a" />-->
+        <NativeFileReference Include="..\..\lib\native\target\wasm32-unknown-unknown\release\libnative.a"/>
+        <!--        <NativeFileReference Include="..\..\lib\native\target\wasm32-wasip1\release\libnative.a" />-->
     </ItemGroup>
 
     <ItemGroup>

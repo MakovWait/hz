@@ -2,7 +2,10 @@
 
 public partial class App
 {
-    [LibraryImport("libnative")]
+    const string LibraryName = "libnative";
+    
+    [LibraryImport(LibraryName)]
+    // [WasmImportLinkage]
     private static partial int add_numbers(int number1, int number2);
 
     public void Start()
